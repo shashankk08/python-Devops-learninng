@@ -1,0 +1,1 @@
+INFO count is : 10  WARNING count is : 2  ERROR count is : 3
