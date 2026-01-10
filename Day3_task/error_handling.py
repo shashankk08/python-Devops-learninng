@@ -16,14 +16,9 @@ try:
     
     user_input2=input("Enter any SpaceX unit , which you want to check ")
     
-    if user_input2=="links":
-        print(api_output["links"])
-    elif user_input2=="crew":
-        print(api_output["crew"])
-    elif user_input2=="cores":
-        print(api_output["cores"])
-    else:
-        print(api_output[user_input2])
+    for i,j in api_output.items():
+        if user_input2==i:
+            print(j)
 
 except Exception as e:
     print("Error",e)    
